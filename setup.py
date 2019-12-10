@@ -4,10 +4,9 @@ setup(
     name='aiologs',
     version='0.0.5',
     description=(
-    '修改支持关键信息不分词',
-    '纯异步的高性能日志组件，支持日志保存文件、mongo、elasticsearch',
-    'Purely asynchronous high performance logging components，Support for writing files，mongo、elasticsearch'
-     ),
+        '异步的日志组件，支持日志保存mongo'
+        'Purely asynchronous high performance logging components，Support for mongo'
+    ),
     long_description=open('README.rst', 'rb').read(),
     author='yuanYW',
     author_email='1030327908@qq.com',
