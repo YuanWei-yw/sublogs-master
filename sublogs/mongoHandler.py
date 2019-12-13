@@ -8,7 +8,7 @@ async def addlogstoDB(data=[]):
     collectName = f'{Sublogconfig.projectName}_{Sublogconfig.env}'
 
     assert len(Sublogconfig.targetDB) > 0
-    config = Sublogconfig.targetDB[0]
+    config = Sublogconfig.targetDB
 
     client = motor.motor_asyncio.AsyncIOMotorClient(config)
     db = client[dataBaseName]    #库名

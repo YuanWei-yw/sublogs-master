@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(
-    name='aiologs',
-    version='0.0.5',
+    name='sublogs',
+    version='0.0.1',
     description=(
         '异步的日志组件，支持日志保存mongo'
         'Purely asynchronous high performance logging components，Support for mongo'
@@ -20,8 +20,6 @@ setup(
         'uvloop',
         'motor',
         'elasticsearch-async',
-        'ujson',
-        'aiofiles',
     ],
     classifiers=[
         "Development Status :: 4 - Beta",

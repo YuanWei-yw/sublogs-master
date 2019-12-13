@@ -18,7 +18,7 @@ class Sublogconfig():
     """
     projectName = "undefine"
     dbtype = 0
-    targetDB = []
+    targetDB = ''
     env = "develop"
     ip = "127.0.0.1"
 
@@ -188,7 +188,7 @@ class SubLogger():
                   logLevel=LogLevel.ERROR):
         self.datas.append({
             "username": username,
-            "addtime": datetime.datetime.now(),
+            "addtime": datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
             "logLevel": LogLevel.getEnumName(logLevel),
             "module": module,
             "category": category,

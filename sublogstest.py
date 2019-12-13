@@ -15,8 +15,10 @@ async def main():
     log = SubLogger()
 
 
-    await log.debug('yuan',"m1", "c1", "c2", {"abc": 1}, {"bcd": 1})
-    await log.error('yuan',"m1", "c1", "c2", {"abc": 1}, {"bcd": 1})
+    await log.debug('yuandebug',"m1", "c1", "c2", {"abc": 1}, {"bcd": 1})
+    await log.error('yuanerror',"m1", "c1", "c2", {"abc": 1}, {"bcd": 1})
+    await log.warning('yuanwarning',"m1", "c1", "c2", {"abc": 1}, {"bcd": 1})
+    await log.info('yuaninfo',"m1", "c1", "c2", {"abc": 1}, {"bcd": 1})
 
 
 if __name__ == "__main__":
